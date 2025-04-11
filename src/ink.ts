@@ -1,6 +1,13 @@
-// Core exports
+// Core public API
 export { Story, InkList } from "./engine/Story";
 export { Compiler, CompilerOptions } from "./compiler/Compiler";
+
+// Export engine internals under Engine namespace
+export * as Engine from "./engine";
+
+// Export compiler internals under CompilerInternals namespace
+export * as CompilerInternals from "./compiler";
+
 export { PosixFileHandler } from "./compiler/FileHandler/PosixFileHandler";
 export { JsonFileHandler } from "./compiler/FileHandler/JsonFileHandler";
 
